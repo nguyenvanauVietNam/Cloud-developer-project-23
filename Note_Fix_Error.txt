@@ -1,0 +1,30 @@
+[psql]
+postgres
+admin123
+
+
+[psql]
+psql -h cdr.cgsjmom39iae.us-east-1.rds.amazonaws.com -U postgres postgres
+[frontend]
+cd udagram-frontend/
+source set_env.sh
+cd /udagram-frontend 
+## Install the package dependencies FORCEFULLY, and ignore the warnings
+npm install -f
+## Build your application by compiling it into static files
+ionic build
+## Run the application locally
+ionic serve
+
+
+[docker]
+reverseproxy
+udagram-api-user
+udagram-api-feed
+udagram-frontend
+
+
+docker login -u nvau96
+pass: dckr_pat_r1hKKLC028enfqNgv7SNVlmnfEY
+
+cmd: docker login -u nvau96  --password-stdin dckr_pat_r1hKKLC028enfqNgv7SNVlmnfEY
