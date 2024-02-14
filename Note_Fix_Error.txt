@@ -28,3 +28,5 @@ docker login -u nvau96
 pass: dckr_pat_r1hKKLC028enfqNgv7SNVlmnfEY
 
 cmd: docker login -u nvau96  --password-stdin dckr_pat_r1hKKLC028enfqNgv7SNVlmnfEY
+docker-compose -f docker-compose-build.yaml build --parallel
+dckr_pat_MkuJ1HLIkqV631Qbnw1u7h2eWyU

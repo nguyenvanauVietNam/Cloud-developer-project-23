@@ -2,6 +2,14 @@
   "dependencies": {
     "@ionic/angular": "^6.7.5",
     "@ionic/angular-server": "^6.7.5",
-    "@ionic/cli": "^6.13.0"
+    "@ionic/cli": "^7.2.0",
+    "@ionic/react": "^6.7.5",
+    "@ionic/react-router": "^6.7.5",
+    "@ionic/vue": "^6.7.5",
+    "@ionic/vue-router": "^6.7.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vue": "^3.4.19",
+    "vue-router": "^4.2.5"
   }
 }
