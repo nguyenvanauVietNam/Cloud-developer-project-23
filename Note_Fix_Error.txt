@@ -26,7 +26,25 @@ udagram-frontend
 
 docker login -u nvau96
 pass: dckr_pat_r1hKKLC028enfqNgv7SNVlmnfEY
-
+docker images -a -q | % { docker image rm $_ -f }
 cmd: docker login -u nvau96  --password-stdin dckr_pat_r1hKKLC028enfqNgv7SNVlmnfEY
 docker-compose -f docker-compose-build.yaml build --parallel
 dckr_pat_MkuJ1HLIkqV631Qbnw1u7h2eWyU
+
+echo "dckr_pat_MkuJ1HLIkqV631Qbnw1u7h2eWyU" | docker login -u "nvau96" --password-stdin
+
+
+docker tag udagram-api-feed:v1 nvau96/udagram-api-feed:v1
+ docker push nvau96/udagram-api-feed:v1
+
+ docker tag udagram-api-user:v1 nvau96/udagram-api-user:v1
+ docker push nvau96/udagram-api-user:v1
+
+  docker tag reverseproxy:v1 nvau96/reverseproxy:v1
+ docker push nvau96/reverseproxy:v1
+
+
+   docker tag udagram-frontend:local nvau96/udagram-frontend
+ docker push nvau96/udagram-frontend:local
+
+ docker-compose -f docker-compose-build.yaml push
