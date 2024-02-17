@@ -33,6 +33,7 @@ dckr_pat_MkuJ1HLIkqV631Qbnw1u7h2eWyU
 
 echo "dckr_pat_MkuJ1HLIkqV631Qbnw1u7h2eWyU" | docker login -u "nvau96" --password-stdin
 
+docker pass: t@6zeZHq186250
 
 docker tag udagram-api-feed:v1 nvau96/udagram-api-feed:v1
  docker push nvau96/udagram-api-feed:v1
