@@ -7,7 +7,7 @@ data:
   POSTGRES_PASSWORD: admin123
   POSTGRES_HOST: cdr.cgsjmom39iae.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: arn:aws:s3:::udacityc3
+  AWS_BUCKET: udacityc3
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing

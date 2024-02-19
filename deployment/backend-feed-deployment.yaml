@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-feed
-          image: nvau96/udagram-api-feed:v1
+          image: nvau96/udagram-api-feed:v2
           env:
             - name: POSTGRES_USERNAME
               valueFrom:
@@ -69,11 +69,11 @@ spec:
             - containerPort: 80
           resources:
             limits:
-              cpu: 500m
+              cpu: 1000m
             requests:
               cpu: 200m
       volumes:
-        - name: nvan96-secret
+        - name: nvau96-secret
           secret:
             secretName: nvau96-secret
 
